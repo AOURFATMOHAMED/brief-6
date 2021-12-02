@@ -32,7 +32,7 @@
  <div class="game-case">
   <input id="nbr-put" type="text" placeholder="Enter a number"> 
   <hr>
-  <button id="guess" onclick="MyFunction"> GUESS
+  <button id="guess" onclick="MyFunction()"> GUESS
   </button>
   <p id="msg"></p>
   <p  id="gss"> Guesses :<span id="spn">10</span>/10</p>
@@ -48,6 +48,8 @@
 
     function MyFunction(){
 
+        if (nbr < 1 || nbr > 100) {
+        alert("please enter a number between 1 and 100");
         if(nbr.value==rand){
             msg.innerHTML="genius"
         }
@@ -61,6 +63,10 @@
             msg.innerHTML="num s4ir"
             tries--;
             tries_element.innerHTML = tries;
+        }
+
+        if(tries==0){
+            
         }
     }
 
