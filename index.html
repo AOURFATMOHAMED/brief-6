@@ -20,9 +20,10 @@
      <img src="Einstein-smile.png" >
  </div>
 
+ <div  id="game-case">
  <!-- instruction -->
  <h1 id="istruction">Instructions :</h1>
- <ul>
+ <ul >
      <li>Enter your guess : between “0” and “100”</li>
      <li>See if your guess is too high or too low</li>
      <li>Change your guess</li>
@@ -37,6 +38,11 @@
   <p id="msg"></p>
   <p  id="gss"> Guesses :<span id="spn">10</span>/10</p>
  </div>
+</div>
+ <div id="img">
+     <img src="logo-3.png"/>
+ </div>
+ 
 
 
 <script> 
@@ -49,7 +55,12 @@
     function MyFunction(){
 
         if(nbr.value==rand){
-            msg.innerHTML="genius"
+            if(tries >=9){
+                msg.innerHTML="genius"
+            }
+            else{
+                msg.innerHTML="u did it after " + (10-tries) + " tries";
+            }
         }
         else if(nbr.value>rand){
             msg.innerHTML="num kbir"
@@ -61,10 +72,12 @@
             msg.innerHTML="num s4ir"
             tries--;
             tries_element.innerHTML = tries;
+        
         }
 
         if(tries==0){
-            window.close()
+            document.getElementById('game-case').style.display="none";
+            document.getElementById("img").style.display="block";   
         }
     }
 

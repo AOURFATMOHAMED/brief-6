@@ -107,6 +107,10 @@ button{
     font-size: 40px;
     line-height: 50px;
 }
+#img{
+    display: none;
+    
+}
 
 
 
