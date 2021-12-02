@@ -33,13 +33,13 @@
   <hr>
   <button id="guess" onclick="MyFunction()"> GUESS
   </button>
-  <p id="msg">Enter your guess : between “0” and “100”</p>
+  <p id="msg"></p>
   <p  id="gss"> Guesses :<span id="spn">10</span>/10</p>
  </div>
 </div>
  <div id="einstein-angry">
      <img src="einstein-angry.png"/>
-     <button>try again</button>
+     <button class="ag-btn">try again</button>
  </div>
  <div id="einstein-happy">
     <img src="einstein-happy 2.png"/>
@@ -63,17 +63,17 @@
             document.getElementById("einstein-happy").style.display="block";  
             }
             else{
-                msg.innerHTML="u did it after " + (10-tries) + " tries";
+                msg.innerHTML="Ops!! YOU WIN BUT AFTER " + (10-tries) + " tries";
             }
         }
         else if(nbr.value>rand){
-            msg.innerHTML="num kbir"
+            msg.innerHTML="NO!! YOUR NUMBER IS TOO BIG"
             tries--;
             tries_element.innerHTML = tries;
 
         }
         else if(nbr.value<rand){
-            msg.innerHTML="num s4ir"
+            msg.innerHTML="NO!! YOUR NUMBER IS TOO SMALL"
             tries--;
             tries_element.innerHTML = tries;
         

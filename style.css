@@ -125,6 +125,10 @@ button{
 #einstein-angry img{
     width: 80%;
 }
+.ag-btn{
+    position: absolute;
+    margin-right: 10px;
+}
 #einstein-happy{
     display: none;
     width: 50%;
@@ -137,6 +141,7 @@ button{
 #einstein-happy img{
     width: 80%;    
 }
+
 
 
 
