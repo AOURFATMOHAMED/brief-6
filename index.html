@@ -14,13 +14,11 @@
      <img src="logo-3.png" alt="logo">
  </nav> 
  <!-- einstein-smile -->
-
+ <div id="game-over">
  <div class="einstein-smile ">
      <h1>Guess My Number </h1>
      <img src="Einstein-smile.png" >
  </div>
-
- <div  id="game-case">
  <!-- instruction -->
  <h1 id="istruction">Instructions :</h1>
  <ul >
@@ -40,7 +38,7 @@
  </div>
 </div>
  <div id="img">
-     <img src="leinstein-angry.png"/>
+     <img src="einstein-angry.png"/>
  </div>
  
 
@@ -76,7 +74,7 @@
         }
 
         if(tries==0){
-            document.getElementById('game-case').style.display="none";
+            document.getElementById('game-over').style.display="none";
             document.getElementById("img").style.display="block";   
         }
     }

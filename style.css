@@ -110,16 +110,16 @@ button{
 #img{
     display: none;
     background-color: #155650;
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3%;
     margin-bottom: 15px;
     border-radius: 50px;
     
 }
 #img img{
     width: 100%;
-    height: 100%;
 }
 
 
