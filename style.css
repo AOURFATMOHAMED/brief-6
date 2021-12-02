@@ -84,10 +84,10 @@ hr{
     border: 1px solid #FFFFFF;
     margin-bottom: 30px;
 }
-button{
+#guess{
     color: white;
     background-color: #3BC59B;
-    width: 100px;
+    width: 150px;
     height:50px;
     margin-bottom: 60px;
     font-size: 25px;
