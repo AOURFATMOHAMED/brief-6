@@ -100,6 +100,10 @@ button{
     width: 85%;
     height:50px;
     margin-bottom: 50px;
+    padding-top:15px ;
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
 }
 #gss{
     color: white;
