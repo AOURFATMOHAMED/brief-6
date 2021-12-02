@@ -37,9 +37,13 @@
   <p  id="gss"> Guesses :<span id="spn">10</span>/10</p>
  </div>
 </div>
- <div id="img">
+ <div id="einstein-angry">
      <img src="einstein-angry.png"/>
  </div>
+ <div id="einstein-happy">
+    <img src="einstein-happy 2.png"/>
+</div>
+
  
 
 
@@ -54,7 +58,8 @@
 
         if(nbr.value==rand){
             if(tries >=9){
-                msg.innerHTML="genius"
+                document.getElementById('game-over').style.display="none";
+            document.getElementById("einstein-happy").style.display="block";  
             }
             else{
                 msg.innerHTML="u did it after " + (10-tries) + " tries";
@@ -75,7 +80,7 @@
 
         if(tries==0){
             document.getElementById('game-over').style.display="none";
-            document.getElementById("img").style.display="block";   
+            document.getElementById("einstein-angry").style.display="block";   
         }
     }
 
