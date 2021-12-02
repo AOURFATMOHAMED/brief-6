@@ -19,7 +19,59 @@
      <h1>Guess My Number </h1>
      <img src="Einstein-smile.png" >
  </div>
- <a href="index-2.html"> <button>Play</button></a>
+
+ <!-- instruction -->
+ <h1 id="istruction">Instructions :</h1>
+ <ul>
+     <li>Enter your guess : between “0” and “100”</li>
+     <li>See if your guess is too high or too low</li>
+     <li>Change your guess</li>
+     <li>The computer will tell you how many guesses you had</li>
+ </ul>
+ <!-- game-case -->
+ <div class="game-case">
+  <input id="nbr-put" type="text" placeholder="Enter a number"> 
+  <hr>
+  <button id="guess" onclick="MyFunction"> GUESS
+  </button>
+  <p id="msg"></p>
+  <p  id="gss"> Guesses :<span id="spn">10</span>/10</p>
+ </div>
+<script> 
+ var  nbr = document.getElementById("nbr-put");
+ var  rand = Math.floor(Math.random()*100);
+ var  msg = document.getElementById("msg");
+ var  tries_element = document.getElementById("spn");
+ var tries = 10;
+
+    function MyFunction(){
+
+        if(nbr.value==rand){
+            msg.innerHTML="genius"
+        }
+        else if(nbr.value>rand){
+            msg.innerHTML="num kbir"
+            tries--;
+            tries_element.innerHTML = tries;
+
+        }
+        else if(nbr.value<rand){
+            msg.innerHTML="num s4ir"
+            tries--;
+            tries_element.innerHTML = tries;
+        }
+    }
+
+
+
+
+
+
+
+ </script>
+
+
+
 
 </body>
 </html>
