@@ -125,9 +125,17 @@ hr{
 #einstein-angry img{
     width: 80%;
 }
-.ag-btn{
+.ag-btn {
+    background-color: #d400ff;
+    color: #ffffff;
+    font-size: 20px;
     position: absolute;
     margin-right: 10px;
+    left: 477PX;
+    top: 346PX;
+    width: 100PX;
+    height: 50PX;
+    border-radius: 10PX
 }
 #einstein-happy{
     display: none;
@@ -140,6 +148,19 @@ hr{
 }
 #einstein-happy img{
     width: 80%;    
+}
+
+.ag-btn2{
+    background-color: #d400ff;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    margin-right: 10px;
+    left: 496PX;
+    top: 476PX;
+    width: 100PX;
+    height: 50PX;
+    border-radius: 10PX
 }
 
 
